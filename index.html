@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FRIO EXPRESS PANAMA</title>
+  <style>
+    :root {
+      --verde: #007A33;
+      --verde-oscuro: #005F26;
+      --gris-claro: #f9f9f9;
+      --sombra: 0 4px 12px rgba(0,0,0,0.1);
+      --transicion: all 0.3s ease;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gris-claro);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--verde);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-shadow: var(--sombra);
+    }
+
+    header img {
+      width: 90px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .header-title h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transicion);
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--verde);
+      margin-bottom: 10px;
+    }
+
+    .services, .gallery, .contact {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: var(--sombra);
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--sombra);
+      transition: var(--transicion);
+      text-align: center;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      background: #f0f0f0;
+    }
+
+    .service-card h3 {
+      margin: 15px 0 5px;
+      color: var(--verde);
+    }
+
+    .service-card p {
+      margin: 0 20px 20px;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery-images img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: var(--sombra);
+      transition: var(--transicion);
+      background: white;
+    }
+
+    .gallery-images img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      transition: var(--transicion);
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebc59;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 12px;
+      background: var(--verde);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: var(--transicion);
+    }
+
+    button:hover {
+      background: var(--verde-oscuro);
+    }
+
+    footer {
+      background: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="logo fep.jpg" alt="Logo FRIO EXPRESS PANAMA">
+      <div class="header-title">
+        <h1>FRIO EXPRESS PANAMA</h1>
+      </div>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenidos a FRIO EXPRESS PANAMA</h2>
+    <p style="text-align: center;">Ofrecemos venta, instalación, mantenimiento y reparación de aires acondicionados para hogares, comercios e industrias. También diseñamos ductos a medida para una climatización eficiente, con un servicio profesional y personalizado.</p>
+  </section>
+
+  <section class="services" id="servicios">
+    <h2>Servicios</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+      <div class="service-card">
+        <img src="mantenimiento.png" alt="Mantenimiento de Aires" />
+        <h3>Mantenimiento</h3>
+        <p>Mantenimientos preventivos de aires acondicionados.</p>
+      </div>
+      <div class="service-card">
+        <img src="instalacion.png" alt="Instalación de Aires" />
+        <h3>Instalación</h3>
+        <p>Instalación y suministros de aires acondicionados y ductos.</p>
+      </div>
+      <div class="service-card">
+        <img src="reparacion.png" alt="Reparación de Aires" />
+        <h3>Reparación</h3>
+        <p>Reparación y diagnóstico de aires acondicionados.</p>
+      </div>
+      <div class="service-card">
+        <img src="ductos.png" alt="Limpieza de Ductos" />
+        <h3>Ductos</h3>
+        <p>Limpieza y desinfección de ductos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="galeria">
+    <h2>Galería de trabajos</h2>
+    <p style="text-align: center;">Aquí podrás ver algunas de nuestras instalaciones, reparaciones y mantenimientos realizados.</p>
+    <div class="gallery-images">
+      <img src="imag1.jpg" alt="Trabajo 1">
+      <img src="imag2.jpg" alt="Trabajo 2">
+      <img src="imag3.jpg" alt="Trabajo 3">
+      <img src="imag4.jpg" alt="Trabajo 4">
+      <img src="imag5.jpg" alt="Trabajo 5">
+      <img src="imag6.jpg" alt="Trabajo 6">
+      <img src="imag7.jpg" alt="Trabajo 7">
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono fijo:</strong> 295-6544</p>
+    <p>
+      <a class="whatsapp-btn" href="https://wa.me/50769808086" target="_blank">Escríbenos por WhatsApp</a>
+    </p>
+    <h3 style="margin-top: 30px;">Formulario de contacto</h3>
+    <form action="https://formspree.io/f/xblgwerd" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FRIO EXPRESS PANAMA. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
